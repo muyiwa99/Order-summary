@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: url(../images/pattern-background-desktop.svg) repeat-x #e0e8ff; }
+
+.card {
+  width: 480px;
+  margin-top: 70px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2); }
+  .card .card-header img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; }
+  .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .card .card-body p {
+      width: 60%;
+      margin: auto;
+      margin-bottom: 1rem; }
+    .card .card-body .p-1 {
+      color: #918d8d; }
+    .card .card-body .plan {
+      background: #f8f7f7;
+      width: 75%;
+      margin: auto;
+      border-radius: 8px;
+      height: 90px;
+      display: flex;
+      margin-bottom: 2rem; }
+      .card .card-body .plan img {
+        height: 70%;
+        width: auto;
+        margin: 1rem 0 0 1rem; }
+      .card .card-body .plan .left {
+        margin-top: 1.6rem;
+        font-size: large;
+        font-weight: bolder; }
+        .card .card-body .plan .left span {
+          font-weight: lighter;
+          font-size: smaller; }
+      .card .card-body .plan a {
+        margin-top: 2rem; }
+    .card .card-body .buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem; }
+      .card .card-body .buttons .button {
+        padding: 0.7rem;
+        height: 40px;
+        background: #3929e0;
+        width: 330px;
+        color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        font-weight: bolder;
+        text-decoration: none;
+        margin-bottom: 1rem; }
+        .card .card-body .buttons .button:hover {
+          opacity: 0.8; }
+      .card .card-body .buttons .cancel {
+        color: #7c7a7a;
+        text-decoration: none;
+        font-weight: bold; }
+
+@media (max-width: 600px) {
+  body {
+    background: url(/images/pattern-background-mobile.svg) no-repeat cover center; }
+  .card {
+    width: 370px; }
+  .plan img {
+    height: 55%; }
+  .plan .left {
+    font-size: smaller;
+    margin-bottom: 1rem; } }
